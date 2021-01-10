@@ -10,7 +10,7 @@ script:
 
 after_sucess:
   - docker build -t liliasimeonova/multi-client ./client
-  - docker build -t liliasimeonova/multi-ngnix ./nginx
+  - docker build -t liliasimeonova/multi-nginx ./nginx
   - docker build -t liliasimeonova/multi-server ./server
   - docker build -t liliasimeonova/multi-worker ./worker
 
